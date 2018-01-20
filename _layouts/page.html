@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<!-- <div id="background" class="{{ page.classe }}">
+
+</div> -->
+
+<div id="wrapper" class="page">
+    <div id="main-wrapper" class="col-md-12 pull-right">
+        <div id="main">
+
+            <div class="swiper-container {{ page.classe }} page" id="background">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" >
+                    <!-- Slides -->
+                    <div class="swiper-slide" data-swiper-parallax="10%">
+                        <div class="img">
+                            <img src="{{ "/img/" | append: page.banniere | relative_url }}" />
+                          </div>          
+                      <div class="info">
+                          <h1>{{ page.title }}</h1>
+                      </div>          
+                    </div>
+                </div>
+            </div>
+            
+          <div class="content">
+              {{ content }}
+          </div>
+        </div>
+    </div>
+  </div>
