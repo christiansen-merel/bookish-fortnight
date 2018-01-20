@@ -36,11 +36,13 @@ $(function () {
   // var position =  $('#news').offset().top - 120 / 2;
   // $('.scroll').css({ top: position-decalage/10 });
 
+  // $('#background').css({'position': 'absolute'});
+
   $('#main').scroll(function (eventObject) {
-    var $background = $("#background");
+    // var $background = $("#background");
     var decalage = $(this).scrollTop();
-    $background.css({ 'top': -decalage/10});
-    var position =  $('#news').offset().top - 120 / 2;
+    $('#background .swiper-wrapper').css({ 'top': +decalage/2});
+    // var position =  $('#news').offset().top - 120 / 2;
     // $('.scroll').css({ top: position-decalage/10 });
   });
 });
@@ -52,7 +54,7 @@ $(function () {
   // $('#background.emplois').css({height: auto, width: $(window).width()});
 
   // $('#background.home').css({height: $(window).height() - 60});
-  $('#wrapper.home').css({top: $('#background.home').height()});
+  // $('#wrapper.home').css({top: $('#background.home').height()});
 
   // $('#news').css({'margin-top': $('#background').height() - 121 });
 
