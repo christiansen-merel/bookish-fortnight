@@ -309,3 +309,13 @@ footer a:hover {
     width: 316px;
     height: 216px;
 }
+
+.btn-noir {
+    color: #dddddd;
+    background-color: #000000;
+    border-color: #adadad;
+}
+
+.page .content {
+    text-align: center;
+}
