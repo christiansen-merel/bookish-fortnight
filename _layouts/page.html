@@ -19,12 +19,13 @@ layout: default
                           </div>          
                       <div class="info">
                           <h1>{{ page.title }}</h1>
+                          <span class="sous-titre">{{ page.sous-titre }}</span>
                       </div>          
                     </div>
                 </div>
             </div>
             
-          <div class="content">
+          <div class="content {{ page.classe }}">
               {{ content }}
           </div>
         </div>

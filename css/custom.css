@@ -177,6 +177,16 @@ nav {
     text-transform: uppercase;
 }
 
+#main .content.services,
+#main .content.compagnie {
+    margin: 0px;
+    margin-top: 60px;
+}
+
+#main .content.compagnie  {
+    margin: 0px;
+    margin-top: 60px;
+}
 
 #background {
     /* background: url(../img/screen_desk.jpg) center 0 no-repeat fixed; */
@@ -254,12 +264,28 @@ nav {
     font-size: 50px;
 }
 
-.contact .swiper-slide .img img {
-    margin-top: -150px;
+.swiper-slide .info .sous-titre {
+    font-size: 16px;
 }
 
-.emplois .swiper-slide .img img {
-    margin-top: -100px;
+@media only screen and (min-width: 980px) and (max-width: 1148px) {
+    .contact .swiper-slide .img img {
+        margin-top: -150px;
+    }
+
+    .emplois .swiper-slide .img img {
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (min-width: 1149px) {
+    .contact .swiper-slide .img img {
+        margin-top: -250px;
+    }
+
+    .emplois .swiper-slide .img img {
+        margin-top: -300px;
+    }
 }
 
 
@@ -309,6 +335,12 @@ footer a:hover {
     width: 316px;
     height: 216px;
 }
+
+.vignettes {
+    font-size: 0px;
+}
+
+
 
 .btn-noir {
     color: #dddddd;

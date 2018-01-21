@@ -10,10 +10,10 @@ layout: default
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper" >
                   <!-- Slides -->
-                  <div class="swiper-slide" data-swiper-parallax="10%"><img src="img/home/earth_1001_2_paul_0001.jpg" /></div>
-                  <div class="swiper-slide" data-swiper-parallax="10%"><img src="img/home/ballon-basket.jpg" /></div>
-                  <div class="swiper-slide" data-swiper-parallax="10%"><img src="img/home/MattHolubowskiClip_02.jpg" /></div>
-                  <div class="swiper-slide" data-swiper-parallax="10%"><img src="img/home/screen_track3D.jpg" /></div>
+                  <div class="swiper-slide" data-swiper-parallax="10%"><img src="{{ "/img/home/earth_1001_2_paul_0001.jpg" | relative_url }}" /></div>
+                  <div class="swiper-slide" data-swiper-parallax="10%"><img src="{{ "img/home/ballon-basket.jpg" | relative_url }}" /></div>
+                  <!-- <div class="swiper-slide" data-swiper-parallax="10%"><img src="{{ "img/home/MattHolubowskiClip_02.jpg" | relative_url }}" /></div>
+                  <div class="swiper-slide" data-swiper-parallax="10%"><img src="{{ "img/home/screen_track3D.jpg" | relative_url }}" /></div> -->
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
@@ -27,31 +27,31 @@ layout: default
             </div>
                     
           <div id="news">
-              <h2>Chez nous, on aime la botanique !</h2>
+              <h2>Nos réalisations</h2>
 
               <div class="ih-item square effect6 top_to_bottom"><a href="#">
-                  <div class="img"><img src="img/ballon-basket.jpg" alt="img"></div>
+                  <div class="img"><img src="{{ "img/home/MattHolubowskiClip_02.jpg" | relative_url }}" alt="img"></div>
                   <div class="info">
                     <h3>Heading here</h3>
                     <p>Description goes here</p>
               </div></a></div>
                   
               <div class="ih-item square effect6 top_to_bottom"><a href="#">
-                  <div class="img"><img src="img/test/2.jpg" alt="img"></div>
-                  <div class="info">
-                      <h3>Heading here</h3>
-                      <p>Description goes here</p>
-              </div></a></div>
-                      
-              <div class="ih-item square effect6 top_to_bottom"><a href="#">
-                  <div class="img"><img src="img/test/3.jpg" alt="img"></div>
+                  <div class="img"><img src="{{ "img/home/magneto_01.jpg" | relative_url }}" alt="img"></div>
                   <div class="info">
                       <h3>Heading here</h3>
                       <p>Description goes here</p>
               </div></a></div>
                           
               <div class="ih-item square effect6 top_to_bottom"><a href="#">
-                  <div class="img"><img src="img/test/4.jpg" alt="img"></div>
+                  <div class="img"><img src="{{ "img/home/screen_track3D.jpg" | relative_url }}" alt="img"></div>
+                  <div class="info">
+                      <h3>Heading here</h3>
+                      <p>Description goes here</p>
+              </div></a></div>
+                      
+              <div class="ih-item square effect6 top_to_bottom"><a href="#">
+                  <div class="img"><img src="{{ "img/test/4.jpg" | relative_url }}" alt="img"></div>
                   <div class="info">
                       <h3>Heading here</h3>
                       <p>Description goes here</p>

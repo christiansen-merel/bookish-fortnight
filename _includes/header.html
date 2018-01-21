@@ -12,13 +12,21 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Black cog<b class="caret"></b></a>
               <ul class="dropdown-menu">
+                  {% if page.permalink contains '/fr/' %}
                   <li><a href="{{ "/compagnie" | prepend: page.langue | prepend: '/' | relative_url }}">Compagnie</a></li>
+                  {% elsif page.permalink contains '/en/' %}
+                  <li><a href="{{ "/compagnie" | prepend: page.langue | prepend: '/' | relative_url }}">Company</a></li>
+                  {% endif %}
                   <li><a href="{{ "/services" | prepend: page.langue | prepend: '/' | relative_url }}">Services</a></li>
               </ul>
           </li>
           <li>
+              {% if page.permalink contains '/fr/' %}
               <a href="{{ "/emplois" | prepend: page.langue | prepend: '/' | relative_url }}">Emplois</a>
-          </li>
+              {% elsif page.permalink contains '/en/' %}
+              <a href="{{ "/emplois" | prepend: page.langue | prepend: '/' | relative_url }}">Jobs</a>
+              {% endif %}
+            </li>
           <li>
               <a href="{{ "/contact" | prepend: page.langue | prepend: '/' | relative_url }}">Contact</a>
           </li>
