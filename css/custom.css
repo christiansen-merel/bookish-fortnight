@@ -351,7 +351,7 @@ footer a:hover {
 .page .content {
     text-align: center;
 }
-h4{
+#contact1 h4, #contact2 h4, #contact3,#contact4 h4,#contact5 h4,#contact6 h4 h4{
     font-size:12px;
     font-weight:bold;
 }
