@@ -352,9 +352,9 @@ footer a:hover {
     text-align: center;
 }
 
-a{
+a.contact{
     color:#ffff;
 }
-a:visited{
+a.contact:visited{
     color:#dddddd;
 }
