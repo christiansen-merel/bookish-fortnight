@@ -352,7 +352,7 @@ footer a:hover {
     text-align: center;
 }
 
- h5#contact1 div.content contact  {
+#contact1 h5 div.content contact  {
     font-size:14px;
     font-weight:bold;
 	color: red;
