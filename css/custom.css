@@ -352,9 +352,6 @@ footer a:hover {
     text-align: center;
 }
 
-a.contact{
-    color:#ffff;
-}
-a.contact:visited{
-    color:#dddddd;
+.contact .page .content > div {
+text-align: left;
 }
