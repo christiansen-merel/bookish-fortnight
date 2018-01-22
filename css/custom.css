@@ -351,10 +351,9 @@ footer a:hover {
 .page .content {
     text-align: center;
 }
-#contact1{
- font-weight:bold;
-}
+
 #contact1 h5   {
     font-size:14px;
     font-weight:bold;
+	color: red;
 }
