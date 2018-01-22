@@ -352,4 +352,9 @@ footer a:hover {
     text-align: center;
 }
 
-
+a{
+    color:#ffff;
+}
+a:visited{
+    color:#dddddd;
+}
