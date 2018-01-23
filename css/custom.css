@@ -353,6 +353,6 @@ footer a:hover {
 }
 
 .contact .page .content > div {
-text-align: inline;
-
+    text-align: left;
+    display : inline;
 }
