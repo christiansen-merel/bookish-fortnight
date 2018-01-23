@@ -336,6 +336,10 @@ footer a:hover {
     height: 216px;
 }
 
+.ih-item.square a:hover .info {
+    opacity: 0;
+}
+
 .vignettes {
     font-size: 0px;
 }
@@ -352,7 +356,117 @@ footer a:hover {
     text-align: center;
 }
 
-.contact .page .content > div {
+.page .content.contact > div {
     text-align: left;
-    display : inline;
+    display : inline-block;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.page .content.contact > div strong {
+    font-weight: bold;
+}
+
+.smart-popin {
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background-color: rgba(0,0,0,1);
+    overflow: auto;
+    z-index: 2000;
+
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.smart-popin .sp-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.smart-popin .sp-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px; /* this space is important to let the box-shadow exceed around the popin - so it has to be at least equal to the shadow radius */
+}
+
+.smart-popin .sp-body {
+    position: relative; /* to allow absolute positionning inside */
+    z-index: 1; /* to ensure the popin body will be over the .sp-back layer */
+    /* width: auto; by default the width of the wider element inside */
+    min-width: 300px;  /* standard width for xs smartphones (320px) minus 2*10px (.sp-cell margins) */
+    margin: 0 auto;
+  
+    /* design */
+  
+    background-color: #ffffff;
+    padding: 2em;
+    /* -webkit-box-shadow: 0 3px 5px 1px rgba(0,0,0,0.25);
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,0.25); */
+    /* max-width: 80%; 66.66 looks good :-); */
+    border-radius: 10px;
+}
+.smart-popin .sp-body * {
+    max-width: 20%; /* this is a security to prevents wide elements such as img to stretch the popin beyond the viewport width */
+}
+
+.smart-popin:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.smart-popin .sp-back {
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    display: block;
+}
+.smart-popin .sp-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 36px;
+    height: 36px;
+
+    text-align: center;
+    line-height: 36px;
+    font-size: 1.6em;
+    color: #000000;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.swiper-container.popin {
+    /* max-width: 40%; */
+}
+
+#wrapper.page .swiper-container.popin {
+    height: auto;
+}
+
+.page .content.mentions-legales {
+    text-align: justify;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: inherit;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
 }

@@ -104,5 +104,25 @@ $(function() {
       //   el: '.swiper-scrollbar',
       // },
     })
+
+    //$(".ih-item.square.effect.top_to_bottom").css({'transform-style': 'preserve-3d'});
+    // $(".ih-item.square.effect.top_to_bottom").tilt({
+    //   scale: 1.2
+    // });
+    // $(".ih-item.square.effect.top_to_bottom").panr({
+    //   sensitivity: 30,
+    //   scale: true,
+    //   scaleOnHover: true,
+    //   scaleTo: 1.2,
+    //   scaleDuration: .2,
+    //   panY: true,
+    //   panX: true,
+    //   panDuration: .01,
+    //   resetPanOnMouseLeave: true,
+    //   onEnter: function(){},
+    //   onLeave: function(){}
+    // });
+
+
   });
 });
