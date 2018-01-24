@@ -481,6 +481,14 @@ footer a:hover {
 .page.service .en-tete.service div.titre {
     text-align: center;
 }
+.page.service .en-tete.service div.titre h1 {
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #dddddd;
+    font-size: 40px;
+}
 .page.service .en-tete.service div.retour {
     padding-left: 110px;
     text-align: left;
