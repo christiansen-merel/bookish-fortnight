@@ -103,7 +103,7 @@ $(function() {
       // scrollbar: {
       //   el: '.swiper-scrollbar',
       // },
-    })
+    });
 
     //$(".ih-item.square.effect.top_to_bottom").css({'transform-style': 'preserve-3d'});
     // $(".ih-item.square.effect.top_to_bottom").tilt({

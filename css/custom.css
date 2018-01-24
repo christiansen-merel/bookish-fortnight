@@ -83,6 +83,10 @@ nav {
     color: #dddddd;
 }
 
+.navbar-default .navbar-nav>li>a:focus {
+    color: #dddddd;
+}
+
 .navbar-default .navbar-nav>li>a:visited {
     color: #dddddd;
 }
@@ -456,6 +460,52 @@ footer a:hover {
 
 .page .content.mentions-legales {
     text-align: justify;
+}
+
+.page.service #main {
+    padding-top: 90px;
+}
+
+.page.service .en-tete.service {
+    /* overflow: hidden; */
+    font-size: 0px;
+}
+
+.page.service .en-tete.service > div {
+    border:  none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    height: 90px;
+}
+.page.service .en-tete.service div.titre {
+    text-align: center;
+}
+.page.service .en-tete.service div.retour {
+    padding-left: 110px;
+    text-align: left;
+    color: #dddddd;
+    font-size: 30px;
+    padding-top: 25px;
+}
+.page.service .en-tete.service div.navigation {
+    padding-right: 110px;
+    color: #dddddd;
+    font-size: 30px;
+    text-align: right;
+    padding-top: 25px;
+}
+.page.service .en-tete.service div.retour a {
+    text-decoration: none;
+    color: #dddddd;
+}
+.page.service .en-tete.service div.navigation a {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+#wrapper.page.service .swiper-container {
+    height: initial;
 }
 
 footer a {

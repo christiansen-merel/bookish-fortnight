@@ -3,7 +3,7 @@
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
           <i class="icon-reorder"></i>
       </button>
-      <a class="navbar-brand" href="{{ "/" | prepend: page.langue | prepend: '/' | relative_url }}">
+      <a class="navbar-brand" href="{{ "/" | prepend: page.langue | prepend: '/' | remove_first: '/fr' | relative_url }}">
           <img alt="Brand" src="{{ "img/LOGO_V2.png" | relative_url }}">
       </a>
   </div>
@@ -25,7 +25,7 @@
       </ul>
       <ul class="nav navbar-nav">
           {% if page.permalink contains '/en/' %}
-          <li><a href="{{ page.permalink | replace_first: '/en', '' | relative_url }}">FR</a></li>
+          <li><a href="{{ page.permalink | remove_first: '/en' | relative_url }}">FR</a></li>
           {% else %}
           <li><a href="{{ page.permalink | prepend: '/en' | relative_url }}">EN</a></li>
           {% endif %}

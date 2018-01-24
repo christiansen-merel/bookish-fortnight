@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div id="wrapper" class="page service {{ page.classe }}">
+    <div id="main-wrapper" class="col-md-12 pull-right">
+        <div id="main">
+
+            <div class="en-tete service row">
+                <div class="retour col-md-2">
+                    <a href="{{ "/services" | prepend: page.langue | prepend: '/' | remove_first: '/fr' | relative_url }}">
+                        <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="titre col-md-8">
+                    <h2>{{ page.title }}</h2>
+                </div>
+                <div class="navigation col-md-2">
+                    <a href="{{ "/services/" | append: page.precedent | relative_url }}">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </a>
+                    <a href="{{ "/services/" | append: page.suivant | relative_url }}">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper" >
+                        <!-- Slides -->
+                        {{ page.photos }}
+                        {% for photo in page.photos %}
+                        <div class="swiper-slide" data-swiper-parallax="10%"><img src="{{ "/img/home/" | append: photo | relative_url }}" /></div>
+                        {% endfor %}
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+                  
+          <div class="content {{ page.classe }}">
+              {{ content }}
+          </div>
+        </div>
+    </div>
+  </div>
