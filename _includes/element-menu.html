@@ -1,0 +1,8 @@
+{% assign traduction = site.data.traductions[page.langue] %}
+{% if page.langue == "fr" %}
+<a href="{{ include.lien | relative_url }}">
+{% else %}
+<a href="{{ include.lien | prepend: page.langue | prepend: '/' | relative_url }}">
+{% endif %}
+{{ traduction | map: include.lien }}
+</a>

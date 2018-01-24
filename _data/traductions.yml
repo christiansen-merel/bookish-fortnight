@@ -1,0 +1,11 @@
+fr:
+  - /compagnie: compagnie
+  - /services: services
+  - /emplois: emplois
+  - /contact: contact
+en:
+  - /compagnie: company
+  - /services: services
+  - /emplois: jobs
+  - /contact: contact
+

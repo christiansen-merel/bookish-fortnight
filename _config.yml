@@ -26,15 +26,12 @@ github_username:  christiansen-merel
 lang: fr
 copyright: copyright Black Cog 2018
 
-# languages: ["fr", "en"]
-
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  # - jekyll-multiple-languages-plugin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,7 +40,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - vendor/

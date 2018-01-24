@@ -12,30 +12,22 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Black cog<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                  {% if page.permalink contains '/fr/' %}
-                  <li><a href="{{ "/compagnie" | prepend: page.langue | prepend: '/' | relative_url }}">Compagnie</a></li>
-                  {% elsif page.permalink contains '/en/' %}
-                  <li><a href="{{ "/compagnie" | prepend: page.langue | prepend: '/' | relative_url }}">Company</a></li>
-                  {% endif %}
-                  <li><a href="{{ "/services" | prepend: page.langue | prepend: '/' | relative_url }}">Services</a></li>
+                  <li>{% include element-menu.html lien="/compagnie" %}</li>
+                  <li>{% include element-menu.html lien="/services" %}</li>
               </ul>
           </li>
           <li>
-              {% if page.permalink contains '/fr/' %}
-              <a href="{{ "/emplois" | prepend: page.langue | prepend: '/' | relative_url }}">Emplois</a>
-              {% elsif page.permalink contains '/en/' %}
-              <a href="{{ "/emplois" | prepend: page.langue | prepend: '/' | relative_url }}">Jobs</a>
-              {% endif %}
+              {% include element-menu.html lien="/emplois" %}
             </li>
           <li>
-              <a href="{{ "/contact" | prepend: page.langue | prepend: '/' | relative_url }}">Contact</a>
+              {% include element-menu.html lien="/contact" %}
           </li>
       </ul>
       <ul class="nav navbar-nav">
-          {% if page.permalink contains '/fr/' %}
-          <li><a href="{{ page.permalink | replace_first: 'fr', 'en' | relative_url }}">EN</a></li>
-          {% elsif page.permalink contains '/en/' %}
-          <li><a href="{{ page.permalink | replace_first: 'en', 'fr' | relative_url }}">FR</a></li>
+          {% if page.permalink contains '/en/' %}
+          <li><a href="{{ page.permalink | replace_first: '/en', '' | relative_url }}">FR</a></li>
+          {% else %}
+          <li><a href="{{ page.permalink | prepend: '/en' | relative_url }}">EN</a></li>
           {% endif %}
       </ul>
   </nav>
