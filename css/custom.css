@@ -512,6 +512,11 @@ footer a:hover {
     color: #dddddd;
 }
 
+.page.service #main .content {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 #wrapper.page.service .swiper-container {
     height: initial;
 }
