@@ -76,11 +76,10 @@ $(function() {
       centeredSlides: true,
       slideToClickedSlide: true,
       grabCursor: true,
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
+      autoHeight: true,
+      effect: 'fade',
       mousewheel: {
-        enabled: false,
+          enabled: false,
       },
       keyboard: {
         enabled: true,
