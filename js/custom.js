@@ -71,58 +71,58 @@ $(function () {
 });
 
 
-$(function() {
-  $(document).ready(function() {
-    var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      centeredSlides: false,
-      effect: 'fade',
-      mousewheel: false,
-      autoHeight: false,
-      watchOverflow: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
+// $(function() {
+//   $(document).ready(function() {
+//     var mySwiper = new Swiper ('.swiper-container', {
+//       // Optional parameters
+//       direction: 'horizontal',
+//       loop: true,
+//       centeredSlides: false,
+//       effect: 'fade',
+//       mousewheel: false,
+//       autoHeight: false,
+//       watchOverflow: true,
+//       autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false
+//       },
 
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        // type: 'fraction',
-      },
+//       // If we need pagination
+//       pagination: {
+//         el: '.swiper-pagination',
+//         // type: 'fraction',
+//       },
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+//       // Navigation arrows
+//       navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//       },
 
-      // And if we need scrollbar
-      // scrollbar: {
-      //   el: '.swiper-scrollbar',
-      // },
-    });
+//       // And if we need scrollbar
+//       // scrollbar: {
+//       //   el: '.swiper-scrollbar',
+//       // },
+//     });
 
-    //$(".ih-item.square.effect.top_to_bottom").css({'transform-style': 'preserve-3d'});
-    // $(".ih-item.square.effect.top_to_bottom").tilt({
-    //   scale: 1.2
-    // });
-    // $(".ih-item.square.effect.top_to_bottom").panr({
-    //   sensitivity: 30,
-    //   scale: true,
-    //   scaleOnHover: true,
-    //   scaleTo: 1.2,
-    //   scaleDuration: .2,
-    //   panY: true,
-    //   panX: true,
-    //   panDuration: .01,
-    //   resetPanOnMouseLeave: true,
-    //   onEnter: function(){},
-    //   onLeave: function(){}
-    // });
+//     //$(".ih-item.square.effect.top_to_bottom").css({'transform-style': 'preserve-3d'});
+//     // $(".ih-item.square.effect.top_to_bottom").tilt({
+//     //   scale: 1.2
+//     // });
+//     // $(".ih-item.square.effect.top_to_bottom").panr({
+//     //   sensitivity: 30,
+//     //   scale: true,
+//     //   scaleOnHover: true,
+//     //   scaleTo: 1.2,
+//     //   scaleDuration: .2,
+//     //   panY: true,
+//     //   panX: true,
+//     //   panDuration: .01,
+//     //   resetPanOnMouseLeave: true,
+//     //   onEnter: function(){},
+//     //   onLeave: function(){}
+//     // });
 
 
-  });
-});
+//   });
+// });

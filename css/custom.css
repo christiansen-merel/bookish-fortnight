@@ -192,11 +192,10 @@ nav {
     margin-top: 60px;
 }
 
-#background {
-    /* background: url(../img/screen_desk.jpg) center 0 no-repeat fixed; */
+/* #background {
     width: 100%;
     height: auto;
-}
+} */
 
 #background.home .swiper-wrapper {
     position: relative;
@@ -293,9 +292,9 @@ nav {
 }
 
 
-#background img {
+/* #background img {
     width: 100%;
-}
+} */
 
 #background.page {
 

@@ -1,11 +1,98 @@
 fr:
-  - /compagnie: Compagnie
-  - /services: Services
-  - /emplois: Emplois
-  - /contact: Contact
+  - HOME:
+      lien: /
+      titre: Black Cog
+  - COMPAGNIE:
+      lien: /compagnie
+      titre: Compagnie
+  - SERVICES:
+      lien: /services
+      titre: Services
+  - EMPLOIS:
+      lien: /emplois
+      titre: Emplois
+  - CONTACT:
+      lien: /contact
+      titre: Contact
+  - services.compositing:
+      lien: /services/compositing
+      titre: Compositing
+  - services.concepts:
+      lien: /services/concepts
+      titre: Concepts
+  - services.decors-numeriques:
+      lien: /services/decors-numeriques
+      titre: Decors numériques
+  - services.effets-numeriques:
+      lien: /services/effets-numeriques
+      titre: Effets numériques
+  - services.matte-painting:
+      lien: /services/matte-painting
+      titre: Compositing
+  - services.models3d:
+      lien: /services/models3d
+      titre: Modeles 3D
+  - services.motion-design:
+      lien: /services/motion-design
+      titre: motion-design
+  - services.previsualisation:
+      lien: /services/previsualisation
+      titre: previsualisation
+  - services.remplacement-fond-vert:
+      lien: /services/remplacement-fond-vert
+      titre: remplacement fond vert
+  - services.supervision-plateau:
+      lien: /services/supervision-plateau
+      titre: supervision plateau
+  - services.tracking3d:
+      lien: /services/tracking3d
+      titre: tracking3d
 en:
-  - /compagnie: Company
-  - /services: Services
-  - /emplois: Jobs
-  - /contact: Contact
-
+  - HOME:
+      lien: /en/
+      titre: Black Cog
+  - COMPAGNIE:
+      lien: /en/company
+      titre: Company
+  - SERVICES:
+      lien: /en/services
+      titre: Services
+  - EMPLOIS:
+      lien: /en/jobs
+      titre: Jobs
+  - CONTACT:
+      lien: /en/contact
+      titre: Contact
+  - services.compositing:
+      lien: /en/services/compositing
+      titre: Compositing
+  - services.concepts:
+      lien: /en/services/concepts
+      titre: Concepts
+  - services.decors-numeriques:
+      lien: /en/services/set-extension
+      titre: Decors numériques
+  - services.effets-numeriques:
+      lien: /en/services/fx
+      titre: Effets numériques
+  - services.matte-painting:
+      lien: /en/services/matte-painting
+      titre: Compositing
+  - services.models3d:
+      lien: /en/services/3d-assets
+      titre: 3D assets
+  - services.motion-design:
+      lien: /en/services/motion-design
+      titre: motion-design
+  - services.previsualisation:
+      lien: /en/services/previs/
+      titre: previsualisation
+  - services.remplacement-fond-vert:
+      lien: /en/services/keying
+      titre: remplacement fond vert
+  - services.supervision-plateau:
+      lien: /en/services/on-set-vfx-supervision
+      titre: supervision plateau
+  - services.tracking3d:
+      lien: /en/services/tracking3d
+      titre: tracking3d
