@@ -29,7 +29,6 @@
           {% else %}
           {% assign langue  = 'fr' %}
           {% endif %}
-          --- {{ site.data.traductions[langue][page.id]['lien'] }} ---
           <li><a href="{{ site.data.traductions[langue] | map: page.id | map: 'lien' | compact | first | relative_url }}">{{ langue | upcase }}</a></li>
       </ul>
   </nav>
