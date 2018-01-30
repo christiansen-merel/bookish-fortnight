@@ -21,19 +21,19 @@ $(document).ready(function(){
   */
   
 
-$(function () {
+// $(function () {
 
-  var width = Math.trunc($(window).width() / 4);
-  var height = Math.trunc(width * 2 / 3);
-  $('.ih-item.square').css({width: width, height: height});
+//   var width = Math.trunc($(window).width() / 4);
+//   var height = Math.trunc(width * 2 / 3);
+//   $('.ih-item.square').css({width: width, height: height});
 
-  $(window).resize(function(){
-    var width = Math.trunc($(window).width() / 4);
-    var height = Math.trunc(width * 2 / 3);
-    $('.ih-item.square').css({width: width, height: height});
-  });
+//   $(window).resize(function(){
+//     var width = Math.trunc($(window).width() / 4);
+//     var height = Math.trunc(width * 2 / 3);
+//     $('.ih-item.square').css({width: width, height: height});
+//   });
 
-});
+// });
 
 
 $(function() {

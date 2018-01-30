@@ -6,15 +6,15 @@ layout: default
         <div id="main">
 
             <div class="en-tete service row">
-                <div class="retour col-md-2">
+                <div class="retour col-xs-2">
                     <a href="{{ "/services" | prepend: page.langue | prepend: '/' | remove_first: '/fr' | relative_url }}">
                         <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
                     </a>
                 </div>
-                <div class="titre col-md-8">
+                <div class="titre col-xs-8">
                     <h1>{{ page.title }}</h1>
                 </div>
-                <div class="navigation col-md-2">
+                <div class="navigation col-xs-2">
                     
                     <a href="{{ site.data.traductions[page.langue] | map: page.precedent | map: 'lien' | compact | first | relative_url }}">
                         <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>

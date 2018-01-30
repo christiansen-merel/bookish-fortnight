@@ -47,28 +47,28 @@ $(function () {
   });
 });
 
-$(function () {
+// $(function () {
   
-  // $('#news').css({'margin-top': $(window).height() - 120 - 120});
+//   // $('#news').css({'margin-top': $(window).height() - 120 - 120});
 
-  // $('#background.emplois').css({height: auto, width: $(window).width()});
+//   // $('#background.emplois').css({height: auto, width: $(window).width()});
 
-  // $('#background.home').css({height: $(window).height() - 60});
-  // $('#wrapper.home').css({top: $('#background.home').height()});
+//   // $('#background.home').css({height: $(window).height() - 60});
+//   // $('#wrapper.home').css({top: $('#background.home').height()});
 
-  // $('#news').css({'margin-top': $('#background').height() - 121 });
+//   // $('#news').css({'margin-top': $('#background').height() - 121 });
 
-  var width = Math.trunc($(window).width() / 4);
-  var height = Math.trunc(width * 2 / 3);
-  $('.ih-item.square').css({width: width, height: height});
+//   var width = Math.trunc($(window).width() / 4);
+//   var height = Math.trunc(width * 2 / 3);
+//   $('.ih-item.square').css({width: width, height: height});
 
-  $(window).resize(function(){
-    var width = Math.trunc($(window).width() / 4);
-    var height = Math.trunc(width * 2 / 3);
-    $('.ih-item.square').css({width: width, height: height});
-  });
+//   $(window).resize(function(){
+//     var width = Math.trunc($(window).width() / 4);
+//     var height = Math.trunc(width * 2 / 3);
+//     $('.ih-item.square').css({width: width, height: height});
+//   });
 
-});
+// });
 
 
 // $(function() {

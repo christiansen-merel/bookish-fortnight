@@ -39,29 +39,6 @@ body {
         border-right: 0;
         border-top: 0;
 }
-@media (max-width: 992px) {
-    body {
-        padding-top: 0px;
-    }
-}
-@media (min-width: 992px) {
-    #main-wrapper { 
-        float:right;
-    }
-}
-@media (max-width: 992px) {
-    #main-wrapper {
-        padding-top: 0px;
-    }
-}
-@media (max-width: 992px) {
-    #sidebar-wrapper {
-        position: static;
-        height:auto;
-        max-height: 300px;
-  		border-right:0;
-	}
-}
 
 .navbar-brand img {
     height: 60px;
@@ -202,12 +179,6 @@ nav {
     position: relative;
 }
 
-@media only screen and (min-width: 1000px)
-.swiper-container .swiper-button-prev,
-.swiper-container .swiper-button-nex {
-    top: 52%!important;
-}
-
 .swiper-container .swiper-button-prev {
     left: 0px;
     padding-right: 4px;
@@ -271,27 +242,6 @@ nav {
 .swiper-slide .info .sous-titre {
     font-size: 16px;
 }
-
-@media only screen and (min-width: 980px) and (max-width: 1148px) {
-    .contact .swiper-slide .img img {
-        margin-top: -150px;
-    }
-
-    .emplois .swiper-slide .img img {
-        margin-top: -100px;
-    }
-}
-
-@media only screen and (min-width: 1149px) {
-    .contact .swiper-slide .img img {
-        margin-top: -250px;
-    }
-
-    .emplois .swiper-slide .img img {
-        margin-top: -300px;
-    }
-}
-
 
 /* #background img {
     width: 100%;
@@ -544,4 +494,102 @@ footer a:hover {
 
 .page.service .swiper-slide img {
     display: inline-block;
+}
+
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+    body {
+        padding-top: 0px;
+    }
+
+    .navbar-default {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #main-wrapper {
+        padding-top: 0px;
+    }
+
+    #sidebar-wrapper {
+        position: static;
+        height:auto;
+        max-height: 300px;
+  		border-right:0;
+    }
+    
+    .page.service .en-tete.service div.navigation {
+        padding-right: 50px;
+        font-size: 28px;
+    }
+    .page.service .en-tete.service div.retour {
+        padding-left: 50px;
+        font-size: 28px;
+    }
+    .page.service .en-tete.service div.titre h1 {
+        font-size: 28px;
+        margin-top: 28px;
+    }
+
+    .ih-item.square {
+        width: 33%;
+        height: initial;
+    }
+
+}
+
+@media (min-width: 992px) {
+    #main-wrapper { 
+        float:right;
+    }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1148px) {
+    .contact .swiper-slide .img img {
+        margin-top: -150px;
+    }
+
+    .emplois .swiper-slide .img img {
+        margin-top: -100px;
+    }
+
+    .page.service .en-tete.service div.navigation {
+        padding-right: 80px;
+    }
+    .page.service .en-tete.service div.retour {
+        padding-left: 80px;
+    }
+    .page.service .en-tete.service div.titre h1 {
+        font-size: 36px;
+        margin-top: 25px;
+    }
+    .ih-item.square {
+        width: 25%;
+        height: initial;
+    }
+}
+
+@media only screen and (min-width: 1149px) {
+    .contact .swiper-slide .img img {
+        margin-top: -250px;
+    }
+
+    .emplois .swiper-slide .img img {
+        margin-top: -300px;
+    }
+
+    .ih-item.square {
+        width: 20%;
+        height: initial;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .swiper-container .swiper-button-prev,
+    .swiper-container .swiper-button-nex {
+        top: 52%!important;
+    }
+
 }
