@@ -24,7 +24,7 @@ url: "https://christiansen-merel.github.io" # the base hostname & protocol for y
 twitter_username: c_merel
 github_username:  christiansen-merel
 lang: fr
-copyright: copyright Black Cog 2018
+copyright: Black Cog 2018
 
 # Build settings
 markdown: kramdown

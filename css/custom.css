@@ -496,7 +496,47 @@ footer a:hover {
     display: inline-block;
 }
 
+@media (max-width: 767px) {
 
+    .navbar-default {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #000000;
+        color: #dddddd;
+        border-color: none;
+    }
+    .navbar-brand {
+        float: left;
+        height: 68px;
+        padding: 10px 0px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .navbar-brand img {
+        height: 50px;
+    }
+    .navbar-toggle {
+        margin-top: 19px;
+        margin-right: 2px;
+        padding: 3px 3px;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
+    .navbar-default .navbar-toggle:enabled {
+        border-color: transparent;
+        background: transparent;        
+    }
+
+    footer {
+        font-size: 11px;
+    }
+
+    .ih-item.square {
+        width: 50%;
+        height: initial;
+    }
+}
 
 @media (max-width: 991px) and (min-width: 768px) {
     body {
@@ -593,3 +633,4 @@ footer a:hover {
     }
 
 }
+
