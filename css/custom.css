@@ -521,6 +521,10 @@ footer a:hover {
     height: initial;
 }
 
+footer {
+    z-index: 1000;
+}
+
 footer a {
     text-decoration: none;
 }
