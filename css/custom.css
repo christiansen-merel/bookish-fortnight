@@ -532,9 +532,48 @@ footer a:hover {
         font-size: 11px;
     }
 
+    #wrapper.page .swiper-container {
+        height: initial;
+    }
+    .swiper-slide .info h1 {
+        font-size: 33px;
+    }
+    .swiper-slide .info {
+        top: -65px;
+    }
+
+    #main .content {
+        margin: 60px;
+    }
+
     .ih-item.square {
         width: 50%;
         height: initial;
+    }
+
+    .page.service .en-tete.service div.retour {
+        padding-left: 0px;
+        font-size: 25px;
+        padding-top: 5px;
+        text-align: right;
+    }
+    .page.service .en-tete.service div.navigation {
+        font-size: 0px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: left;
+    }
+    .page.service .en-tete.service div.navigation a span.glyphicon {
+        font-size: 25px;
+    }
+    .page.service .en-tete.service div.titre {
+        padding-top: 6px;
+    }
+    .page.service .en-tete.service div.titre h1 {
+        font-size: 20px;
+        margin-top: 0px;
     }
 }
 
