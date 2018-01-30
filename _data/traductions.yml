@@ -47,6 +47,9 @@ fr:
   - services.tracking3d:
       lien: /services/tracking3d
       titre: tracking3d
+  - services.packshot:
+      lien: /services/packshot
+      titre: packshot
 en:
   - HOME:
       lien: /en/
@@ -96,3 +99,6 @@ en:
   - services.tracking3d:
       lien: /en/services/tracking3d
       titre: tracking3d
+  - services.packshot:
+      lien: /en/services/packshot
+      titre: packshot
