@@ -1,0 +1,15 @@
+---
+layout: service
+title: Packshot
+sous-titre: 
+permalink: /services/packshot/
+classe: packshot
+langue: fr
+photos:
+  - screenReplacement_bandeau.jpg
+precedent: services.remplacement-fond-vert
+suivant: services.compositing
+id: services.packshot
+---
+
+<p>La technique du fond vert nous permet d'intégrer vos acteur dans n’importe quel environnement avec un réalisme parfait.</p>
