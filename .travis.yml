@@ -1,20 +1,29 @@
 language: ruby
 rvm:
-  - 2.4.1
+- 2.4.1
 
-# before_script:
-#   - chmod +x ./script/cibuild # or do this locally and commit
+addons:
+  apt:
+    packages:
+      - sshpass
 
-install: gem install bundler html-proofer && bundle install
+install: 
+  - gem install bundler html-proofer
+  - bundle install
+
 script: bundle exec jekyll build --config _config.yml && htmlproofer ./_site
 
-branches: 
+deploy:
+  - sshpass -p $FTP_PASSWORD scp _site/* blackcogns@ftp.cluster023.hosting.ovh.net:/www/test/
+
+branches:
   only:
-    - master
-    - dev 
+  - master
+  - dev
 
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: olfH+ZJApupU0+wVei4Z9KEgQdf7IsKffPrmLtqSysrmfaSoclYuqlYVhvmyMy0MV/NUBKb5HSUp09Ip/vdO/Lllwzm8UpIVW1hNh1vr5lOHZ8RK/yZvrJMqaaeBQxRGbE2WItdWuDyjngzPJP1YZ1T9hFO/oGdPB2G2pg2kt8U/fhRl614fCDb71uugWNVKwpqOa8Ca7dgEzJrp+nOItBPeWNklp3r+3APQrUl9L+YX02JJHM4S3eD18JTk0kXBcFcV0tN5zgtvtsKojOWHlp5XbPlI92JgbRclnMwsGyZW5VVloNMFS9My3oz+y6KjmcwVamia0XEsvE9jH/QTLFzeUq/hRSaRxbcbIPZUSPT7Dz0OUhHu++Gos7HyQECxhL3SAWfyaLmdeOkSc+4i0tJFk+NsYUc4SF/v3EM6xueniv/XjALPwkTiRyRgV5J1ur5Y3nTicFu2qlt9vMAUXZEl5fyqnIUoawZ+Phj8+GaPd7fuX+MS1q8VPN5sXr7x2u3fZ7Ft1DjG5C0gqgrkSrS1Q2FrJIT125dDMANtEfsqTnOGFmH/o00yrlmF6jf7cIUMzIbAslH3iurKL8VvBw/6RG4J37Z9yV1/vGfvdvqnA3v67IUuoYyJfYjkODFtV1MOWRpu/BsP+XJ0zZ6QEjyWO88w6OolJxS4q/S08tI=
 
-sudo: false # route your build to the container-based infrastructure for a faster build
+sudo: false
