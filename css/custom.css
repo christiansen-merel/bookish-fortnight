@@ -496,6 +496,31 @@ footer a:hover {
     display: inline-block;
 }
 
+/* ****************************** */
+/* begin temporaire */
+/* ****************************** */
+#wrapper .swiper-container.home {
+    /* margin-top: 69px; */
+    display: initial;
+}
+
+#wrapper.home #background {
+    background: initial;
+    /* background-size: 100%; */
+    width: initial;
+    height: initial;
+    /* display: block; */
+} 
+/* ****************************** */
+/* end temporaire */
+/* ****************************** */
+
+/* #main-wrapper { 
+    float:right;
+} */
+
+
+
 @media (max-width: 767px) {
 
     .navbar-default {
@@ -673,3 +698,25 @@ footer a:hover {
 
 }
 
+/* ****************************** */
+/* begin temporaire */
+/* ****************************** */
+@media only screen and (max-width: 991px) {
+
+    #wrapper .swiper-container.home {
+        margin-top: 69px;
+        display: none;
+    }
+
+    #wrapper.home #background {
+        background: no-repeat left url('../img/home/earth_1001_3_paul_0001.jpg');
+        /* background-size: 100%; */
+        width: 1500px;
+        height: 100%;
+        /* display: block; */
+    } 
+
+}
+/* ****************************** */
+/* end temporaire */
+/* ****************************** */
