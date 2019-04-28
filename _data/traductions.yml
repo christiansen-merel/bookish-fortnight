@@ -8,12 +8,18 @@ fr:
   - SERVICES:
       lien: /services
       titre: Services
+  - BANDE_DEMO:
+      lien: /bande-demo
+      titre: Bande démo
   - EMPLOIS:
       lien: /emplois
       titre: Emplois
   - CONTACT:
       lien: /contact
       titre: Contact
+  - MENTIONS_LEGALES:
+      lien: /mentions-legales
+      titre: Mentions Légales
   - services.compositing:
       lien: /services/compositing
       titre: Compositing
@@ -60,6 +66,9 @@ en:
   - SERVICES:
       lien: /en/services
       titre: Services
+  - BANDE_DEMO:
+      lien: /demo-reel
+      titre: Demo reel
   - EMPLOIS:
       lien: /en/jobs
       titre: Jobs
