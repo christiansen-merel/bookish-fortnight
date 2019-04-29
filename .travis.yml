@@ -16,7 +16,7 @@ script: bundle exec jekyll build --config _config.yml
 
 deploy:
   provider: script
-  script: sshpass -p $FTP_PASSWORD scp _site/* blackcogns@ftp.cluster023.hosting.ovh.net:/www/test/
+  script: bash scripts/deploy.sh
   on:
     branch: dev
 
