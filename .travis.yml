@@ -11,8 +11,7 @@ install:
   - gem install bundler html-proofer
   - bundle install
 
-script: bundle exec jekyll build --config _config.yml 
-# && htmlproofer ./_site
+script: scripts/build.sh
 
 deploy:
   skip_cleanup: true
