@@ -8,6 +8,7 @@ addons:
       - sshpass
 
 install: 
+  - cat ovh-public-key.txt >> $HOME/.ssh/known_hosts
   - gem install bundler html-proofer
   - bundle install
 
