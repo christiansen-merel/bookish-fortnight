@@ -15,6 +15,7 @@ script: bundle exec jekyll build --config _config.yml
 # && htmlproofer ./_site
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: bash scripts/deploy.sh
   on:
