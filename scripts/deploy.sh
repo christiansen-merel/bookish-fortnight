@@ -4,6 +4,6 @@ set -x
 # set -e
 
 # sshpass -p $FTP_PASSWORD scp -v -r '_site' blackcogns@ftp.cluster023.hosting.ovh.net:/www/test
-ncftpput -u blackcogns -p $FTP_PASSWORD -R -v -d ftp.log ftp.cluster023.hosting.ovh.net /www/test _site
+cd _site
+ncftpput -u blackcogns -p $FTP_PASSWORD -R -v -d ftp.log -m -t 30 ftp.cluster023.hosting.ovh.net /www/test *
 cat ftp.log
-
